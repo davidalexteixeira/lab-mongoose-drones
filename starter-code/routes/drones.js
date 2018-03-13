@@ -19,10 +19,6 @@ router.get('/', (req, res, next) => {
       drones: drones
     });
   });
-  //   drones.forEach((drones) => {
-  //     console.log(' --> drones: ', drones.name);
-  //   });
-  // });
 });
 
 router.get('/new', (req, res, next) => {
@@ -31,12 +27,6 @@ router.get('/new', (req, res, next) => {
 });
 
 router.post('/', (req, res, next) => {
-  // let name = req.body.name;
-  // let propellers = req.body.propellers;
-  // let maxSpeed = req.body.maxSpeed;
-
-  // res.send(`Name: ${name}, Propellers: ${propellers}, Max Speed: ${maxSpeed}`);
-
   const droneInfo = {
     name: req.body.name,
     propellers: req.body.propellers,
